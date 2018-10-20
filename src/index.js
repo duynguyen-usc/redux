@@ -18,7 +18,7 @@ ReactDOM.render(
         <Switch>
             // Most specific route first
             <Route path="/posts/new" component={PostsNew} />
-              <Route path="/" component={PostIndex} />
+            <Route path="/" component={PostIndex} />
         </Switch>
       </div>
     </BrowserRouter>
