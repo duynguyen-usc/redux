@@ -11,7 +11,7 @@ class PostsNew extends Component {
           type="text"
           {...field.input}
         />
-      {field.meta.error}
+      {field.meta.touched ? field.meta.error : ''}
       </div>
     );
   }
@@ -25,7 +25,7 @@ class PostsNew extends Component {
 
     return (
       <div>
-        <form onSubmit={handleSubmit(this.onSubmit.bind(this))} >
+        <form onSubmit={ handleSubmit(this.onSubmit.bind(this))} >
           <Field
             label="Title for Post"
             name="title"
