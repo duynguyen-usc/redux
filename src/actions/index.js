@@ -19,5 +19,5 @@ export function createPosts(values) {
   return {
     type: CREATE_POST,
     payload: request
-  }
+  };
 }
