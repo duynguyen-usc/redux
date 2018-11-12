@@ -11,3 +11,7 @@ class PostsShow extends Component {
 }
 
 export default PostsShow;
+
+export function fetchPost(id){
+  
+}
